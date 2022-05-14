@@ -81,28 +81,27 @@ main {
   position: relative;
   width: 477px;
   height: 268px;
+  font-family: 'Impact';
+  font-style: normal;
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 39px;
+  color: #FFFFFF;
+  text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+  text-transform: uppercase;
 }
 
 .up-text {
   position: absolute;
   top: 0;
-  font-family: 'Impact';
-  font-style: normal;
-  font-size: 32px;
-  line-height: 39px;
-  color: #FFFFFF;
-  text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+  margin-top: 16px;
+
 }
 
 .down-text {
   position: absolute;
   bottom: 0;
-  font-family: 'Impact';
-  font-style: normal;
-  font-size: 32px;
-  line-height: 39px;
-  color: #FFFFFF;
-  text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+  margin-bottom: 16px;
 }
 
 .meme-img--wrapper img {
