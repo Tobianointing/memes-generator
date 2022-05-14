@@ -1,13 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Karla', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+button,
+input {
+  all: unset;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+  padding: 20px 20px;
+  color: #FFFFFF;
+}
+
+.logo--img {
+  margin-right: 7px;
+}
+
+.logo--title {
+  margin-right: auto;
+  font-weight: 700;
+  font-size: 20.7482px;
+  line-height: 24px;
+  letter-spacing: -0.1em;
+}
+
+.logo--sub-title {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: right;
+}
+
+main {
+  padding: 36px;
+}
+
+.form--inline-wrapper {
+  display: flex;
+  gap: 17px;
+}
+
+.form--inline-wrapper>input {
+  border: 1px solid #D5D4D8;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 12px;
+  line-height: 14px;
+  color: #0D0D0D;
+  width: 100%;
+}
+
+.form--btn {
+  background: linear-gradient(90.41deg, #711F8D 1.14%, #A818DA 100%);
+  border-radius: 5px;
+  color: #FFFFFF;
+  width: 100%;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.meme--wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.meme-img--wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 36px;
+  position: relative;
+  width: 477px;
+  height: 268px;
+}
+
+.up-text {
+  position: absolute;
+  top: 0;
+  font-family: 'Impact';
+  font-style: normal;
+  font-size: 32px;
+  line-height: 39px;
+  color: #FFFFFF;
+  text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+}
+
+.down-text {
+  position: absolute;
+  bottom: 0;
+  font-family: 'Impact';
+  font-style: normal;
+  font-size: 32px;
+  line-height: 39px;
+  color: #FFFFFF;
+  text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+}
+
+.meme-img--wrapper img {
+  width: 100%;
 }
