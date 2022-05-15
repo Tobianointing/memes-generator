@@ -81,20 +81,32 @@ main {
   position: relative;
   width: 477px;
   height: 268px;
+}
+
+.meme--text {
+  position: absolute;
   font-family: 'Impact';
   font-style: normal;
   font-size: 32px;
   font-weight: 900;
   line-height: 39px;
   color: #FFFFFF;
-  text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+  text-shadow:
+    2px 2px 0 #000,
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    0 2px 0 #000,
+    2px 0 0 #000,
+    0 -2px 0 #000,
+    -2px 0 0 #000,
+    2px 2px 5px #000;
   text-transform: uppercase;
   text-align: center;
   line-height: 50px;
 }
 
 .up-text {
-  position: absolute;
   top: 0;
   margin-top: 16px;
 
