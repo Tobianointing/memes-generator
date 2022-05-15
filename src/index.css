@@ -89,6 +89,8 @@ main {
   color: #FFFFFF;
   text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
   text-transform: uppercase;
+  text-align: center;
+  line-height: 50px;
 }
 
 .up-text {
