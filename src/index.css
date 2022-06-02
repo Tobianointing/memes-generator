@@ -121,3 +121,18 @@ main {
 .meme-img--wrapper img {
   width: 100%;
 }
+
+.download--div {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.download--btn {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: blue;
+  width: fit-content;
+  color: white;
+  cursor: pointer;
+}

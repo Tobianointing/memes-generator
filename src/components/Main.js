@@ -1,6 +1,7 @@
 import MemeForm from "./MemeForm"
 import Meme from "./Meme"
 import React from "react"
+import html2canvas from "html2canvas"
 
 export default function Main() {
   const [formData, setFormData] = React.useState({})
@@ -38,10 +39,32 @@ export default function Main() {
     setRandomMeme(getRandomMeme())
   }
 
+  function handleDownload() {
+    const imgWrapper = document.querySelector(".meme-img--wrapper")
+
+    html2canvas(imgWrapper, {
+      logging: true,
+      useCORS: true,
+      letterRendering: 1,
+    }).then((canvas) => {
+      const base64img = canvas.toDataURL("image/png")
+      const anchor = document.createElement("a")
+      anchor.setAttribute("href", base64img)
+      anchor.setAttribute("download", "meme.png")
+      anchor.click()
+      anchor.remove()
+    })
+  }
+
   return (
     <main>
       <MemeForm onChange={handleChange} onClick={handleClick} />
       <Meme randomMeme={randomMeme} data={formData} />
+      <div className="download--div">
+        <button className="download--btn" onClick={handleDownload}>
+          Download Meme
+        </button>
+      </div>
     </main>
   )
 }
